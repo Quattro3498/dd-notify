@@ -1,0 +1,96 @@
+* {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  color: white;
+}
+
+.notifications {
+  position: fixed;
+  width: 410px;
+  max-height: 800px;
+  min-height: 100px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.notify {
+  position: relative;
+  width: 400px;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.74);
+  align-items: center;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 2px 2px 7px black;
+  right: -100%;
+  margin-bottom: 10px;
+}
+
+.notify .icon {
+  position: relative;
+  width: 25%;
+  height: 100%;
+  font-size: 70px;
+  display: inline-block;
+}
+
+.notify .icon i {
+  position: absolute;
+  color: #931fd6;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.notify .divisory {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 3px;
+  height: 80%;
+  border-radius: 10px;
+  background-color: #931fd6;
+  z-index: 99;
+}
+
+.notify .text {
+  position: absolute;
+  top: 0%;
+  left: 26%;
+  width: 73%;
+  height: 100%;
+}
+
+.notify .text .title {
+  position: relative;
+  color: #931fd6;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 4px;
+  margin-bottom: 2px;
+}
+
+.notify .text .message {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 15px;
+  text-align: center;
+}
+
+.notify .loading-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+}
+
+.notify .loading-bar .cover {
+  width: 0%;
+  height: 100%;
+  background-color: #931fd6;
+}
